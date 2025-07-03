@@ -1,3 +1,5 @@
+var tanya = true;
+while (tanya == true) {
 // Menangkap pilihan pemain
 var p = prompt("pilih : gajah, semut,orang");
 
@@ -28,5 +30,21 @@ if (p == comp) {
 } else {
   hasil = "memasukan pilihan yang salah";
 }
+
+// Tampilkan hasilnya
+  alert(
+    "kamu memilih : " +
+      p +
+      " dan komputer memilih " +
+      comp +
+      "\nmaka hasilnya : kamu " +
+      hasil
+  );
+
+  tanya = confirm("lagi?");
+}
+
+alert("Terima kasih sudah bermain");
+
 
 
