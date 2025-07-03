@@ -14,3 +14,19 @@ if (comp < 0.34) {
 }
 console.log(comp);
 
+// Menentukan Rules
+var hasil = "";
+
+if (p == comp) {
+  hasil = "seri";
+} else if (p == "gajah") {
+  hasil = comp == "orang" ? "menang" : "kalah";
+} else if (p == "orang") {
+  hasil = comp == "gajah" ? "kalah" : "menang";
+} else if (p == "semut") {
+  hasil = comp == "orang" ? "kalah" : "menang";
+} else {
+  hasil = "memasukan pilihan yang salah";
+}
+
+
